@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0">
+  <script>
+    const links = [
+      "https://cdn.videy.co/0PhMEFbx1.mp4",
+    ];
+
+    const randomLink = links[Math.floor(Math.random() * links.length)];
+    window.location.replace(randomLink);
+  </script>
+</head>
+<body>
+</body>
+</html>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right-click
+    document.addEventListener('keydown', function(event) {
+        if (
+            event.ctrlKey && (event.key === 'u' || event.key === 'U' || event.key === 'c' || event.key === 'C' || event.key === 's' || event.key === 'S' || event.key === 'p' || event.key === 'P') ||
+            event.ctrlKey && event.shiftKey && (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J') ||
+            event.key === 'F12'
+        ) {
+            event.preventDefault();
+        }
+    });
+</script>
